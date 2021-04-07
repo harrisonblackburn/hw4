@@ -60,11 +60,12 @@ let questions = [
 function displayQuestion(){
     question.textContent = questions[0].question;
     choiceA.textContent = questions[0].choiceA;
-    
+    choiceB.textContent = questions[0].choiceB;
+    choiceC.textContent = questions[0].choiceC;
+    choiceD.textContent = questions[0].choiceD;
 // we need to reference a specific value within the object within the array
 // append value to DOM reference 
-console.log(questions[0])
-}
+
 
 
 
