@@ -56,8 +56,20 @@ let questions = [
 
 }]
 
+// creating function to display the question to the user
+function displayQuestion(){
+    question.textContent = questions[0].question;
+    choiceA.textContent = questions[0].choiceA;
+    
+// we need to reference a specific value within the object within the array
+// append value to DOM reference 
+console.log(questions[0])
+}
 
 
 
-
-
+start.addEventListener('click', function(){
+    this.style.display = "none";
+    quiz.style.display = "block";
+    displayQuestion();
+} )
